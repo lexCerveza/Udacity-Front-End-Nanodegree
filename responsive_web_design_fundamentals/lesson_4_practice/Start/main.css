@@ -361,3 +361,16 @@ footer a {
   text-decoration: none;
   color: #333;
 }
+
+/*
+  Media queries
+*/
+
+@media screen and (min-width: 800px){
+  body {
+    width: 800px;
+    margin-left : auto;
+    margin-right : auto;
+  }
+}
+
