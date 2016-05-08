@@ -1,0 +1,55 @@
+.container {
+	width: 100%;
+	display: flex;
+	flex-wrap : wrap;
+}
+
+.box {
+	width: 100%;
+	min-height: 128px;
+}
+
+.green {
+	background-color: green;
+}
+
+.red {
+	background-color: red;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.violet {
+	background-color: violet;
+}
+
+@media screen and (min-width: 501px) {
+	#fluid-container {
+		width: 50%;
+	}
+
+	.green {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 801px){
+	.container {
+		width: 800px;
+		margin: 0 auto;
+	}
+
+	.green {
+		width: 25%;
+	}
+
+	#fluid-container {
+		width: 50%;
+	}
+
+	.violet {
+		width: 25%;
+	}
+}

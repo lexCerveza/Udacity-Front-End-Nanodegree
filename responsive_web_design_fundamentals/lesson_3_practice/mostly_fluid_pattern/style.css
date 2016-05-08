@@ -1,0 +1,71 @@
+.container {
+	width: 100%;
+	display: flex;
+	flex-wrap : wrap;
+}
+
+.box {
+	width: 100%;
+	height: 128px;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.light-blue {
+	background-color: #00BFFF;
+}
+
+.green {
+	background-color: green;
+}
+
+.red {
+	background-color: red;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+@media screen and (min-width: 450px) and (max-width: 800px) {
+	.light-blue {
+		width: 50%;
+	}
+
+	.green {
+		width: 50%;
+	}
+
+	.red {
+		width: 33%;
+	}
+
+	.yellow {
+		width: 66%;
+	}
+}
+
+@media screen and (min-width: 801px){
+	.container {
+		width: 700px;
+		margin: 0 auto;
+	}
+
+	.light-blue {
+		width: 50%;
+	}
+
+	.green {
+		width: 50%;
+	}
+
+	.red {
+		width: 33%;
+	}
+
+	.yellow {
+		width: 66%;
+	}
+}
