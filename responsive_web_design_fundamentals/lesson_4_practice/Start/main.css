@@ -71,6 +71,12 @@ ul {
   color: #212121;
 }
 
+.header__menu {
+  display: none;
+  font-size: 32px !important;
+}
+
+
 
 /*
  *
@@ -108,7 +114,6 @@ ul {
   text-decoration: underline;
   color: #212121;
 }
-
 
 /*
  *
@@ -362,9 +367,37 @@ footer a {
   color: #333;
 }
 
+
+
 /*
   Media queries
 */
+
+
+@media screen and (max-width: 600px){
+  .header__logo {
+    height: 48px;
+  }
+
+  .header__title {
+    font-weight: 100;
+    font-size: 2.5em;
+  }
+
+  .header__menu {
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+    margin-right: 12px;
+  }
+
+  #drawer {
+    max-width: 600px;
+    position: absolute;
+    transform : translate(-600px, 0);
+    transition : transform 0.3s ease;
+  }
+}
 
 @media screen and (min-width: 800px){
   body {
@@ -374,3 +407,7 @@ footer a {
   }
 }
 
+.open {
+  position: static !important;
+  transform : translate(0, 0) !important;
+}
