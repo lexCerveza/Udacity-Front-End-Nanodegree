@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="js/menu.js"></script>
   </head>
   <body>
 
@@ -180,14 +181,4 @@
       </footer>
     </main>
   </body>
-
-  <script>
-      document.addEventListener("DOMContentLoaded", function() {
-          var menuButton = document.getElementsByClassName("header__menu")[0];
-          menuButton.addEventListener('click', function(e) {
-            document.getElementById("drawer").classList.toggle('open');
-            e.stopPropagation();
-          });
-      }, false);    
-  </script>
 </html>

@@ -373,7 +373,6 @@ footer a {
   Media queries
 */
 
-
 @media screen and (max-width: 600px){
   .header__logo {
     height: 48px;
