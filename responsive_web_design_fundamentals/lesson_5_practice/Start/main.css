@@ -204,6 +204,16 @@ main {
   text-decoration: underline;
 }
 
+/*
+  Sport Scores and Weather container
+*/
+
+.scores-weather-container {
+  display: flex;
+  flex-direction : row;
+  flex-wrap : wrap;
+}
+
 
 /*
  *
@@ -212,7 +222,7 @@ main {
  */
 
 .scores {
-  width: 100%;
+  min-width: 60%;
   padding-top: 1em;
 }
 
@@ -260,7 +270,7 @@ main {
  */
 
 .weather {
-  width: 100%;
+  width: 40%;
   padding: 1em;
 }
 
@@ -374,6 +384,14 @@ footer a {
 */
 
 @media screen and (max-width: 600px){
+  .scores {
+    width: 100%;
+  }
+
+  .weather {
+    width: 100%;
+  }
+
   .header__logo {
     height: 48px;
   }
